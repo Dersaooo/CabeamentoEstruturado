@@ -1,0 +1,2057 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin D:/Google Drive/PÓS REDES/CABEAMENTO ESTRUTURADO/Projeto Git Cabeamento Estruturado/CabeamentoEstruturado/
+\textclass scrartcl
+\begin_preamble
+%%% LaTeX Template: Two column article
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep to referal to http://www.howtotex.com/ here.
+%%% Date: February 2011
+
+%%% Preamble
+% KOMA-article class
+
+\usepackage{lipsum}% Package to create dummy text
+\usepackage[brazil]{babel}
+% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}% Better typography
+\usepackage{amsfonts}\usepackage{amsthm}% Math packages
+\usepackage[pdftex]{graphicx}% Enable pdflatex
+\usepackage[svgnames]{xcolor}% Enabling colors by their 'svgnames'
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}% Custom captions under/above floats
+\usepackage{epstopdf}% Converts .eps to .pdf
+% Subfigures
+\usepackage{booktabs}% Nicer tables
+\usepackage{fix-cm}% Custom fontsizes
+\usepackage[ddmmyyyy]{datetime}
+\addto\captionsenglish{%
+	\renewcommand{\tablename}{Tabela}
+	\renewcommand{\figurename}{Figura}
+} 
+ 
+
+ 
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty}% Custom sectioning (see below)
+\allsectionsfont{%															% Change font of al section commands
+	\usefont{OT1}{phv}{b}{n}%										% bch-b-n: CharterBT-Bold font
+	}
+
+\sectionfont{%																% Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%										% bch-b-n: CharterBT-Bold font
+	}
+
+
+
+%%% Headers and footers
+\usepackage{fancyhdr}% Needed to define custom headers/footers
+															% Enabling the custom headers/footers
+\usepackage{lastpage}
+
+
+% Header (empty)
+\lhead{}
+\chead{}
+\rhead{}
+% Footer (you may change this to your own needs)
+
+%% ====================================
+%% ====================================
+%% mude o rodape  do projeto
+%% ====================================
+%% ====================================
+
+\lfoot{\footnotesize \texttt{Cabeamento estruturado} \textbullet ~Modelo de projeto}
+
+
+\cfoot{}
+\rfoot{\footnotesize página \thepage\ de \pageref{LastPage}}	% "Page 1 of 2"
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+%%% Creating an initial of the very first character of the content
+\usepackage{lettrine}
+\newcommand{\initial}[1]{%
+     \lettrine[lines=3,lhang=0.3,nindent=0em]{
+     				\color{DarkGoldenrod}
+     				{\textsf{#1}}}{}}
+
+
+
+%%% Title, author and date metadata
+\usepackage{titling}% For custom titles
+
+\newcommand{\HorRule}{\color{DarkGoldenrod}%			% Creating a horizontal rule
+									  	\rule{\linewidth}{1pt}%
+										}
+
+\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
+				\fontsize{50}{50} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
+				}
+
+%% ====================================
+%% ====================================
+%% mude o titulo  do projeto
+%% ====================================
+%% ====================================
+
+\title{Projeto Cabeamento Estruturado}					% Title of your article goes here
+
+%% ====================================
+
+
+
+\posttitle{\par\end{flushleft}\vskip 0.5em}
+
+\preauthor{\begin{flushleft}
+					\large \lineskip 0.5em \usefont{OT1}{phv}{b}{sl} \color{DarkRed}}
+\author{Anderson Luis de Souza}  	% Author name goes here
+
+
+\postauthor{\footnotesize \usefont{OT1}{phv}{m}{sl} \color{Black} 
+					\\Universidade Tecnológica Federal do Paraná - Câmpus Cornélio Procópio 								% Institution of author
+					\par\end{flushleft}\HorRule}
+
+																				% No date
+
+
+
+
+%%% Begin document
+
+\end_preamble
+\options DIV=calc,paper=a4,fontsize=12pt
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Enabling the custom headers/footers for the first page 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% The first character should be within 
+\backslash
+initial{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% mude o resumo  do projeto
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+initial{
+\end_layout
+
+\end_inset
+
+E
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\series bold
+ste projeto trata-se de uma reestruturação de uma empresa de segurança eletrônica. Tal empresa possui uma central de monitoramento com até 10 atendentes simultâneos, utilizando estrutura IP para desktops e telefones. Além da sala de monitoramento, possui setores administrativo, comercial, diretoria, entre outros. Será feito um levantamento da estrutura física do cliente, a fim de obter o cenário atual da empresa, para determinar quais as mudanças serão implantadas. Será elaborado a planta lógica, levantamento de equipamentos passivos, de custos, e também um plano de certificação. A finalidade desta reestruturação é a organização e viabilizar o crescimento da rede, tornando as manutenções mais rápidas.
+\series default
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename utfpr
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset VSpace 2cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\shape italic
+
+\series bold
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\shape default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*{
+\backslash
+listfigurename}{Lista de figuras}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*{
+\backslash
+listtablename}{Lista de tabelas}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\contentsname}{Sumário}
+\end_inset
+
+ 
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% Inicio do texto
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ====================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Introdução
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Indique também nesta seção o escopo do projeto.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Apresente um overview do parque tecnológico do caso. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Benefícios
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Explique quais seriam os benefícios provenientes após a execução deste projeto.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Organizações Envolvidas
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Sugestão: crie uma tabela contento a relação delas.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Estado atual
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Caso tenha rede, deixe claro: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+os passivos de rede atuais:path panels, cabos, etc..; 
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas. 
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Requisitos
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Crie uma enumeração dos requisitos do projeto.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Usuários e Aplicativos
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Usuários
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Crie uma relação da quantidade, perfil de usuários de seu projeto.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Aplicativos
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Crie uma relação dos aplicativos e seus níveis críticos de uso.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Estrutura predial existente
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Explique aqui a planta física dos prédios Pode ser anexada, em escala ou não.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Planta Lógica - Elementos estruturados
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Estado atual
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Deve ter a planta atual, se for o caso
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Topologia
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Proposta futura, proposta após implantação. Deve conter o diagrama da rede. Atente-se a redundância e ligações truncadas. Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Todos os elementos das figuras devem ser explicados. Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "tab1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Encaminhamento
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Memorial descritivo
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Identificação dos cabos
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Implantação
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Estabeleça um cronograma de implantação: Remoção de equipamentos existentes (destino para descarte), instalação dos condutores, instalação dos cabos, identificação dos cabos, montagem dos racks, certificação, etc... Crie atividades e estabeleça o tempo de execução. Se for um projeto real, indique também quais os responsáveis pela execução do projeto e de cada uma das etapas.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Defina marcas (e padrões) e fornecedores se for o caso. Atenção a contratados e subcontratados para a realização das atividades. Estabeleça a responsabilidade de execução da atividade e também da validação dela.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Utilize algum software para gerear o cronograma. Excel,etc. O fundamental é dividir em etapas, descrever e estimar o tempo de cada uma delas.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Segue uma relação de ferramentas: http://asana.com/, https://trello.com/, http://www.ganttproject.biz/, http://www.orangescrum.org/.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Plano de certificação
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Quais seriam as etapas para a certificação? Quais os locais e horários para execução da certificação na rede? Toda rede será certificada? Como os testes seriam executados? Quais relatórios de certificação serão (ou deveriam ser) entregues?
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Plano de manutenção
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Revisões periódicas na rede, emissão de certificados para novos pontos.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Plano de expansão
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede?
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Risco
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Enumerar e explicar os riscos do projeto.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Orçamento
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Crie uma relação de orçamentos baseado na seções anteriores.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Recomendações
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Observações e recomendações para o cliente.
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Referências bibliográficas
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Exemplo: Redes de computadores, segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "t2013"
+literal "false"
+
+\end_inset
+
+ é considerada..... Já 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "kurose2010"
+literal "false"
+
+\end_inset
+
+ apresenta uma versão...
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Analisando os pressupostos de 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ref3"
+literal "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ref4"
+literal "false"
+
+\end_inset
+
+ concluimos que....
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset FormulaMacro
+\renewcommand{\refname}{}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%Referências bibliográficas}  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "referencias"
+options "ieeetr"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ***********************************************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% === remover daqui =====================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ***********************************************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+================================================= 
+\end_layout
+
+\begin_layout Section
+
+\lang brazilian
+Elementos textuais - Alguns exemplos
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Esta seção apresenta exemplos de elementos textuais. 
+\series bold
+Remova-a da versão final do texto
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Colocar elementos em itens
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Texto antes da lista
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+First item in a list 
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+Second item in a list 
+\end_layout
+
+\begin_layout Itemize
+
+\lang brazilian
+Third item in a list 
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang brazilian
+Uma subseção de terceiro nivel
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Exemplo de uma subseção
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Tabelas
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho. Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "tab2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo: Na tab 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ temos a relação de ....
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
+\end_layout
+
+\begin_layout Subsection
+
+\lang brazilian
+Figuras
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta.....
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename fig1.png
+	width 100text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de figura com escala horizontal
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig1"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename fig2.png
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de figura sem escala
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig2"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename fig3.jpg
+	height 100text%
+	rotateAngle -90
+	scaleBeforeRotation
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de figura rotacionada
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig3"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Você também pode inserir páginas de outro tamanho em seu texto. Isto irá ajudar a inserir imagens maiores, como as desenvolvidas em CAD. Segue um exemplo na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%inicio dos comandos para criar uma nova pagina A3
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+KOMAoptions
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+paper=a3, pagesize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+recalctypearea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename fig3.jpg
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de figura inserida em uma página A3
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig4"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Retornar ao formato A4
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+KOMAoptions
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+paper=a4, pagesize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+recalctypearea
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-- reinicio em A4 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%inicio dos comandos para criar uma nova pagina A3 horizontal
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+KOMAoptions
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+paper=a3, paper=landscape, DIV=20
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+recalctypearea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\noindent
+
+\lang brazilian
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename fig3.jpg
+	width 100text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de figura inserida em uma página A3 no formato horizontal
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig5"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Retornar ao formato A4
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+KOMAoptions
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+paper=a4, paper=portrait, DIV=15
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+recalctypearea
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-- reinicio em A4 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang brazilian
+Resumo gráfico
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Você pode optar por fazer um resumo no formato de mapa mental/conceitual. Aqui foi utilizado o site https://app.mindmup.com para gerar o mapa.
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e inclua o código para inserir a figura, conforme figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename fig4.png
+	width 100text%
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de resumo gráfico
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig6"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ***********************************************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% === ate aqui    =====  ================================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%% ***********************************************************************
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

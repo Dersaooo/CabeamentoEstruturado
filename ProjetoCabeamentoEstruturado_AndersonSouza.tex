@@ -87,7 +87,7 @@
 										}
 
 \pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
-				\fontsize{50}{50} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
+				\fontsize{40}{40} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
 				}
 
 %% ====================================
@@ -96,7 +96,7 @@
 %% ====================================
 %% ====================================
 
-\title{Projeto Cabeamento Estruturado}					% Title of your article goes here
+\title{Projeto Cabeamento Estruturado - Empresa Segurança Eletrônica}					% Title of your article goes here
 
 %% ====================================
 
@@ -134,7 +134,7 @@
 %% ====================================
 %% ====================================
 
-\initial{E}\textbf{ste projeto trata-se de uma reestruturação de uma empresa de segurança eletrônica. Tal empresa possui uma central de monitoramento com até 10 atendentes simultâneos, utilizando estrutura IP para desktops e telefones. Além da sala de monitoramento, possui setores administrativo, comercial, diretoria, entre outros. 
+\initial{E}\textbf{ste projeto trata-se de uma reestruturação de uma empresa de segurança eletrônica. Tal empresa possui uma central de monitoramento com até 6 atendentes simultâneos, utilizando estrutura IP para desktops e telefones. Além da sala de monitoramento, possui setores administrativo, comercial, diretoria, entre outros. 
 Será feito um levantamento da estrutura física do cliente, a fim de obter o cenário atual da empresa, para determinar quais as mudanças serão implantadas.
 Será elaborado a planta lógica, levantamento de equipamentos passivos, de custos, e também um plano de certificação.
 A finalidade desta reestruturação é a organização e viabilizar o crescimento da rede, tornando as manutenções mais rápidas.}
@@ -170,56 +170,93 @@ A finalidade desta reestruturação é a organização e viabilizar o cresciment
 %% ====================================
 %% ====================================
 \section{Introdução}
-Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
+Com foco principal em viabilizar a expansão da empresa, o setor de ti da empresa, propõe uma reestruturação e planejamento da rede de computadores.
 
-Indique também nesta seção o escopo do projeto.
+A empresa presta serviços de segurança eletrônica e portaria remota, em empresas e condomínios. Atualmente possui cerca de 25 colaboradores que revezam em escalas. O principal setor da empresa é a base de monitoramento, no qual hoje possui 6 estações de atendimentos simultâneas. A empresa também é dividida em outros setores, sendo, financeiro, comercial, recepção, diretoria, ti e operacional.
 
-Apresente um overview do parque tecnológico do caso.
+Como meta de crescimento, a empresa deseja até o ano de 2021 possuir 10 estações de atendimento, além da expansão dos outros setores.
+
 \subsection{Benefícios}
-Explique quais seriam os benefícios provenientes após a execução deste projeto.
+Neste projeto, o cliente contara com diversos benefícios, como:
+
+\begin{itemize}
+	\item Viabilizar a expansão dos negócios da empresa
+	\item Facilitar manutenções e novas implantações
+	\item Organização e identificação dos pontos de rede
+	\item Padronização e certificação
+\end{itemize}
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
-
-Sugestão: crie uma tabela contento a relação delas.
-
-
+Por se tratar de uma reestruturação da empresa, todos os setores estarão envolvidos, porém, não será distribuído funções para estes setores.
+O setor de TI estará diretamente envolvido com esta reestruturação, sendo este o principal contato para tais alterações.
 
 \section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+Para fins informativos, o estado atual da rede é:
 
-Caso tenha rede, deixe claro:
 \begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
+	\item 2 Switch de 24 Portas não gerenciado
+	\item 1 Switch de 16 Portas não gerenciado
+	\item 3 Patch panel 24 portas Cat5e
+	\item Cabeamento Cat5e
+	\item 1 RouterBoard Mikrotik 3010
+	\item 3 Servidores Torre fixados no rack
+	\item 1 Servidor Voip
+	\item 16 Estações de trabalho Desktop
+	\item 20 Telefones IP
+	\item 1 Internet 200MB/200MB GPOM
+	\item 10 Links de dados SLDD 4MB FULL
+	\item Nobreak NHS 2600 VA + Módulo de Bateria
+	\item Gerador Toyama 7 Kva
 \end{itemize}
 
 \section{Requisitos}
-Crie uma enumeração dos requisitos do projeto.
+Para a implantação deste projeto, o cliente deverá providencial alguns requisitos, como tubulação, móveis, além dos itens descritos na tabela 1.
+
+\input{tabRequisitos}
 
 \section{Usuários e Aplicativos}
-Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
- 
 
-\subsection{Usuários}
-Crie uma relação da quantidade, perfil de usuários de seu projeto.
+Atualmente na empresa trabalha-se em horários de pico, no máximo 14 colaboradores simultâneos.
 
-\subsection{Aplicativos}
-Crie uma relação dos aplicativos e seus níveis críticos de uso.
+Até 2021 a empresa espera ter cerca de 22 colaboradores simultâneos, divididos entre os diversos setores da empresa.
 
+Os usuários internos utilizam do sistema ERP da empresa, e raramente precisam utilizar da navegação na internet, salvo setor comercial e TI. 
+Os colaboradores da base de monitoramento, utilizam de sistema de monitoramento de eventos e câmeras.
+
+Além destes descritos, todas as estações contam com Microsoft Windows 10 Pro, Microsoft Office 2016. Em nível de servidor, estes possuem Microsoft Windows Server 2016 e SQL Server. Em nível de rede, somente o router OS da Mikrotik.
+
+A tabela 2, mostra os perfis de usuários, assim como os aplicativos mais usados por cada um destes.
+
+\input{TabPerfilUsuarios}
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
+A figura 1, observa-se a planta física da empresa.
 
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
+\begin{figure}[h!]
+	\centering
+\includegraphics[width=\textwidth]{PlantaEmpresa}
+	\caption{Planta Física da Empresa}
+	\label{Planta Empresa}
+\end{figure}
+
+Nesta planta, observa-se que a distancia entre as salas e o servidor é relativamente pequena, sendo assim, todo o cabeamento ficará abaixo de 100 Mts, não sendo necessário repetidores entre os setores.
+
+Também se observa que as salas são pequenas, possibilitando que sejam implantados cerca de 3 computadores por sala, exceto monitoramento e comercial, que podem ser alocados até 10 computadores cada.
 
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Estado atual}
-Deve ter a planta atual, se for o caso
+
+Na Figura 2, se observa a planta lógica atual da empresa, no qual utiliza da topologia estrela, concentrando toda a rede nos switch da sala do servidor.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{PlantaLogicaAtual}
+	\caption{Planta Lógica Atual da Empresa}
+	\label{Planta Lógica Atual}
+\end{figure}
+
 
 \subsection{Topologia}
 Proposta futura, proposta após implantação.
@@ -229,10 +266,10 @@ Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo:
 Todos os elementos das figuras devem ser explicados. 
 Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
 
-\input{tab1}
-
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+Será necessário para a execução do projeto, a instalação de eletrodutos galvanizados e eletro calhas, para acomodar os fios. A quantidade de materiais é detalhado na tabela a seguir.
+
+\input{TabEncaminhamento}
 
 \subsection{Memorial descritivo}
 
